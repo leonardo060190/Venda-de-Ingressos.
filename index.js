@@ -2,13 +2,13 @@ function calcular(){
     if(validaQuantidade() && validapreco() && validafilme() && validaSessao()){
     let total = parseFloat(quantidade.value) * parseFloat(preco.value);
     valor_a_pagar.value = total;
-}
-}
+};
+};
 
 function validaQuantidade(){
     if(quantidade.value.trim() === ""){
         quantidade.style.background = "green";
-        mensagem.innerHTML = "Informe a Quantidade."
+        mensagem.innerHTML = "Informe a Quantidade.";
         $('#alerta').modal('show');
         return false;
     }else{
@@ -20,7 +20,7 @@ function validaQuantidade(){
 function validapreco(){
 if(preco.value.trim() === ""){
     preco.style.background = "green";
-    mensagem.innerHTML = "Informe o Preço."
+    mensagem.innerHTML = "Informe o Preço.";
     $('#alerta').modal('show');
     return false;
 }else{
@@ -32,7 +32,7 @@ if(preco.value.trim() === ""){
 function validafilme(){
 if(filme.value.trim() === ""){
     filme.style.background = "green";
-    mensagem.innerHTML = "Informe o nome do Filme."
+    mensagem.innerHTML = "Informe o nome do Filme.";
     $('#alerta').modal('show');
     return false;
 }else{
@@ -44,7 +44,7 @@ if(filme.value.trim() === ""){
 function validaSessao(){
 if(sessao.value.trim() === ""){
     sessao.style.background = "green";
-    mensagem.innerHTML = "Informe a Sessão."
+    mensagem.innerHTML = "Informe a Sessão.";
     $('#alerta').modal('show');
     return false;
 }else{
